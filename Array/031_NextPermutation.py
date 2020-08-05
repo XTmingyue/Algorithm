@@ -18,6 +18,38 @@
 1,1,5 → 1,5,1
 
 '''
+import math
 
 class NextPermutation():
+    def Reverse(self, nums, left, right):
+        length = math.floor((right - left)/2)
+        for i in range(0, length):
+            nums[left], nums[right-1] = nums[right-1], nums[left]
+            left += 1
+            right -= 1
+        return nums
     def next_permutation(self, nums):
+        index = None
+        for i in range(len(nums)-1, 0, -1):
+            if i > 0 and nums[i - 1] < nums[i]:
+                index = i - 1
+                break
+        if index == None:
+            return self.Reverse(nums, 0, len(nums))
+        elif index == len(nums) - 1:
+            nums[i - 1], nums[i] = nums[i], nums[i - 1]
+            return nums
+        else:
+            mark_index = None
+            for j in range(len(nums)-1, 0, -1):
+                if nums[j] > nums[index]:
+                    mark_index = j
+                    break
+            nums[index], nums[mark_index] = nums[mark_index], nums[index]
+            return self.Reverse(nums, index+1, len(nums))
+
+
+if __name__ == '__main__':
+    nums = [1, 2, 4, 5, 3]
+    NP = NextPermutation()
+    print(NP.next_permutation(nums))
