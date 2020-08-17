@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="68c8a2de-5643-4cdf-843e-e9f2d6ed0890" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Array/031_NextPermutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Array/031_NextPermutation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +35,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="熊涛 &lt;xiongtao@xiongtaodemacbook-pro.local&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1f6wF0WgxUmsadwlMB68v3cFws5" />
@@ -33,28 +53,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Python.031_NextPermutation">
-    <configuration name="018_fourSum" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/018_fourSum.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.035_SearchInsert">
     <configuration name="026_RemoveDuplicates" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,6 +117,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="035_SearchInsert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/探索/数组与字符串" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/035_SearchInsert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="215_FindKthLargest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,19 +160,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.018_fourSum" />
       <item itemvalue="Python.026_RemoveDuplicates" />
       <item itemvalue="Python.027_RemoveElement" />
       <item itemvalue="Python.215_FindKthLargest" />
       <item itemvalue="Python.031_NextPermutation" />
+      <item itemvalue="Python.035_SearchInsert" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.035_SearchInsert" />
         <item itemvalue="Python.031_NextPermutation" />
         <item itemvalue="Python.215_FindKthLargest" />
         <item itemvalue="Python.027_RemoveElement" />
         <item itemvalue="Python.026_RemoveDuplicates" />
-        <item itemvalue="Python.018_fourSum" />
       </list>
     </recent_temporary>
   </component>
@@ -169,27 +189,34 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020-08-05 NextPermutation Get" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-08-05 NextPermutation Get" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="507" y="211" key="FileChooserDialogImpl" timestamp="1595601766710">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="211" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1595601766710" />
-    <state width="1419" height="274" key="GridCell.Tab.0.bottom" timestamp="1596642809583">
+    <state width="1419" height="164" key="GridCell.Tab.0.bottom" timestamp="1597680730036">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596642809583" />
-    <state width="1419" height="274" key="GridCell.Tab.0.center" timestamp="1596642809582">
+    <state width="1419" height="164" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597680730036" />
+    <state width="1419" height="164" key="GridCell.Tab.0.center" timestamp="1597680730035">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596642809582" />
-    <state width="1419" height="274" key="GridCell.Tab.0.left" timestamp="1596642809582">
+    <state width="1419" height="164" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597680730035" />
+    <state width="1419" height="164" key="GridCell.Tab.0.left" timestamp="1597680730035">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596642809582" />
-    <state width="1419" height="274" key="GridCell.Tab.0.right" timestamp="1596642809582">
+    <state width="1419" height="164" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597680730035" />
+    <state width="1419" height="164" key="GridCell.Tab.0.right" timestamp="1597680730036">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596642809582" />
+    <state width="1419" height="164" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597680730036" />
     <state width="1419" height="274" key="GridCell.Tab.1.bottom" timestamp="1596642811646">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -206,10 +233,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="274" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596642811646" />
+    <state x="473" y="159" key="RollbackChangesDialog" timestamp="1597680256432">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="473" y="159" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1597680256432" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1595604793745">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1595604793745" />
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597680244197">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1597680244197" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
