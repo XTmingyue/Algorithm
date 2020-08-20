@@ -21,14 +21,20 @@
   [8,5,2],
   [9,6,3]
 ]
+
+官方题解：https://leetcode-cn.com/problems/rotate-matrix-lcci/solution/xuan-zhuan-ju-zhen-by-leetcode-solution/
 '''
+
 
 class Rotate():
     def rotate(self, matrix):
-        for i in range(0, len(matrix)):
-            for j in range(0, len(matrix[i])):
-
-        return []
+        n = len(matrix)
+        row = len(matrix)//2
+        col = (len(matrix)+1)//2
+        for i in range(0, row):
+            for j in range(0, col):
+                matrix[i][j], matrix[n-j-1][i], matrix[n-i-1][n-j-1], matrix[j][n-i-1] = matrix[n-j-1][i], matrix[n-i-1][n-j-1], matrix[j][n-i-1], matrix[i][j]
+        return matrix
 
 
 if __name__ == '__main__':
