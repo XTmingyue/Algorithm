@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68c8a2de-5643-4cdf-843e-e9f2d6ed0890" name="Default" comment="2020-08-05 NextPermutation Get">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/xiongtao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/探索/数组与字符串/01.07_Rotate.py" beforeDir="false" afterPath="$PROJECT_DIR$/探索/数组与字符串/01.07_Rotate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/027_RemoveElement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Array/027_RemoveElement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/探索/数组与字符串/005_LongestPalindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/探索/数组与字符串/005_LongestPalindrome.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +56,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
   </component>
-  <component name="RunManager" selected="Python.014_LongestCommonPrefix">
-    <configuration name="014_LongestCommonPrefix" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.209_MinSubArrayLen">
+    <configuration name="027_RemoveElement" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,11 +65,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/探索/数组与字符串" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/014_LongestCommonPrefix.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/027_RemoveElement.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,7 +78,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="01.07_Rotate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="028_StrStr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,7 +90,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/01.07_Rotate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/028_StrStr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="01.08_SetZeroes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="209_MinSubArrayLen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +111,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/01.08_SetZeroes.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/209_MinSubArrayLen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +120,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="056_Merge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="485_FindMaxConsecutiveOnes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -132,7 +132,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/056_Merge.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/485_FindMaxConsecutiveOnes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +141,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="498_FindDiagonalOrder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="561_ArrayPairSum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,7 +153,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/498_FindDiagonalOrder.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/561_ArrayPairSum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,19 +163,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.056_Merge" />
-      <item itemvalue="Python.01.07_Rotate" />
-      <item itemvalue="Python.01.08_SetZeroes" />
-      <item itemvalue="Python.498_FindDiagonalOrder" />
-      <item itemvalue="Python.014_LongestCommonPrefix" />
+      <item itemvalue="Python.028_StrStr" />
+      <item itemvalue="Python.561_ArrayPairSum" />
+      <item itemvalue="Python.027_RemoveElement" />
+      <item itemvalue="Python.485_FindMaxConsecutiveOnes" />
+      <item itemvalue="Python.209_MinSubArrayLen" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.014_LongestCommonPrefix" />
-        <item itemvalue="Python.498_FindDiagonalOrder" />
-        <item itemvalue="Python.01.08_SetZeroes" />
-        <item itemvalue="Python.01.07_Rotate" />
-        <item itemvalue="Python.056_Merge" />
+        <item itemvalue="Python.209_MinSubArrayLen" />
+        <item itemvalue="Python.485_FindMaxConsecutiveOnes" />
+        <item itemvalue="Python.027_RemoveElement" />
+        <item itemvalue="Python.561_ArrayPairSum" />
+        <item itemvalue="Python.028_StrStr" />
       </list>
     </recent_temporary>
   </component>
@@ -213,46 +213,46 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="211" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1595601766710" />
-    <state width="1419" height="274" key="GridCell.Tab.0.bottom" timestamp="1597938266801">
+    <state width="1419" height="186" key="GridCell.Tab.0.bottom" timestamp="1598372276512">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597938266801" />
-    <state width="1419" height="274" key="GridCell.Tab.0.center" timestamp="1597938266800">
+    <state width="1419" height="186" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598372276512" />
+    <state width="1419" height="186" key="GridCell.Tab.0.center" timestamp="1598372276510">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597938266800" />
-    <state width="1419" height="274" key="GridCell.Tab.0.left" timestamp="1597938266799">
+    <state width="1419" height="186" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598372276510" />
+    <state width="1419" height="186" key="GridCell.Tab.0.left" timestamp="1598372276509">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597938266799" />
-    <state width="1419" height="274" key="GridCell.Tab.0.right" timestamp="1597938266801">
+    <state width="1419" height="186" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598372276509" />
+    <state width="1419" height="186" key="GridCell.Tab.0.right" timestamp="1598372276511">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597938266801" />
-    <state width="1419" height="274" key="GridCell.Tab.1.bottom" timestamp="1597938266803">
+    <state width="1419" height="186" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598372276511" />
+    <state width="1419" height="186" key="GridCell.Tab.1.bottom" timestamp="1598372276515">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597938266803" />
-    <state width="1419" height="274" key="GridCell.Tab.1.center" timestamp="1597938266802">
+    <state width="1419" height="186" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598372276515" />
+    <state width="1419" height="186" key="GridCell.Tab.1.center" timestamp="1598372276514">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1597938266802" />
-    <state width="1419" height="274" key="GridCell.Tab.1.left" timestamp="1597938266802">
+    <state width="1419" height="186" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1598372276513" />
+    <state width="1419" height="186" key="GridCell.Tab.1.left" timestamp="1598372276513">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1597938266802" />
-    <state width="1419" height="274" key="GridCell.Tab.1.right" timestamp="1597938266803">
+    <state width="1419" height="186" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1598372276513" />
+    <state width="1419" height="186" key="GridCell.Tab.1.right" timestamp="1598372276514">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1597938266803" />
+    <state width="1419" height="186" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1598372276514" />
     <state x="473" y="159" key="RollbackChangesDialog" timestamp="1597680256432">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="473" y="159" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1597680256432" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1597937711749">
+    <state x="221" y="89" key="SettingsEditor" timestamp="1598197764773">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1597937711749" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1598197764773" />
     <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597680244197">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -269,6 +269,11 @@
           <url>file://$PROJECT_DIR$/Array/031_NextPermutation.py</url>
           <line>36</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/探索/数组与字符串/028_StrStr.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -25,6 +25,7 @@
 
 class RemoveElement():
     def remove_element(self, nums, val):
+        # index 指向第一个等于val的数组下标
         index = None
         ele_num = 0
         for i in range(0, len(nums)):
@@ -39,8 +40,18 @@ class RemoveElement():
         print(nums[0:ele_num])
         return ele_num
 
+    # 采用快慢双指针的方式
+    def remove_element_2(self, nums, val):
+        # slow和fast同时往前移动，当遇到等于val的值时，slow不动，fast继续移动找到下一个不等于val的值，将其替换到slow的位置
+        slow = 0
+        for fast in range(0, len(nums)):
+            if nums[fast] != val:
+                nums[slow] = nums[fast]
+                slow += 1
+        return slow
+
 if __name__ == '__main__':
     nums = [0,1,2,2,3,0,4,2]
     val = 2
     RE = RemoveElement()
-    print(RE.remove_element(nums, val))
+    print(RE.remove_element_2(nums, val))
