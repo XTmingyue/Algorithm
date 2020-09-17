@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68c8a2de-5643-4cdf-843e-e9f2d6ed0890" name="Default" comment="2020-08-05 NextPermutation Get">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/探索/数组与字符串/209_MinSubArrayLen.py" beforeDir="false" afterPath="$PROJECT_DIR$/探索/数组与字符串/209_MinSubArrayLen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/递归/698_CanPartitionKSubsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/递归/698_CanPartitionKSubsets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,92 +55,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
   </component>
-  <component name="RunManager" selected="Python.698_CanPartitionKSubsets">
-    <configuration name="027_RemoveElement" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/027_RemoveElement.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="209_MinSubArrayLen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/探索/数组与字符串" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/209_MinSubArrayLen.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="485_FindMaxConsecutiveOnes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/探索/数组与字符串" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/485_FindMaxConsecutiveOnes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="561_ArrayPairSum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/探索/数组与字符串" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/探索/数组与字符串/561_ArrayPairSum.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="698_CanPartitionKSubsets" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.032_LongestValidParentheses">
+    <configuration name="面试题 16.11_DivingBoard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,7 +68,91 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/递归/698_CanPartitionKSubsets.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/递归/面试题 16.11_DivingBoard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="010_IsMatch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/动态规划" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/010_IsMatch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="032_LongestValidParentheses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/动态规划" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/032_LongestValidParentheses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="053_MaxSubArray" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/动态规划" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/053_MaxSubArray.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="剑指Offer_fib" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/递归" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/递归/剑指Offer_fib.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,19 +162,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.561_ArrayPairSum" />
-      <item itemvalue="Python.027_RemoveElement" />
-      <item itemvalue="Python.485_FindMaxConsecutiveOnes" />
-      <item itemvalue="Python.209_MinSubArrayLen" />
-      <item itemvalue="Python.698_CanPartitionKSubsets" />
+      <item itemvalue="Python.剑指Offer_fib" />
+      <item itemvalue="Python.面试题 16.11_DivingBoard" />
+      <item itemvalue="Python.053_MaxSubArray" />
+      <item itemvalue="Python.010_IsMatch" />
+      <item itemvalue="Python.032_LongestValidParentheses" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.698_CanPartitionKSubsets" />
-        <item itemvalue="Python.209_MinSubArrayLen" />
-        <item itemvalue="Python.485_FindMaxConsecutiveOnes" />
-        <item itemvalue="Python.027_RemoveElement" />
-        <item itemvalue="Python.561_ArrayPairSum" />
+        <item itemvalue="Python.032_LongestValidParentheses" />
+        <item itemvalue="Python.010_IsMatch" />
+        <item itemvalue="Python.053_MaxSubArray" />
+        <item itemvalue="Python.面试题 16.11_DivingBoard" />
+        <item itemvalue="Python.剑指Offer_fib" />
       </list>
     </recent_temporary>
   </component>
@@ -212,38 +212,38 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="211" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1595601766710" />
-    <state width="1419" height="186" key="GridCell.Tab.0.bottom" timestamp="1598543905850">
+    <state width="1419" height="186" key="GridCell.Tab.0.bottom" timestamp="1600304157754">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598543905850" />
-    <state width="1419" height="186" key="GridCell.Tab.0.center" timestamp="1598543905849">
+    <state width="1419" height="186" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600304157754" />
+    <state width="1419" height="186" key="GridCell.Tab.0.center" timestamp="1600304157753">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598543905849" />
-    <state width="1419" height="186" key="GridCell.Tab.0.left" timestamp="1598543905849">
+    <state width="1419" height="186" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600304157753" />
+    <state width="1419" height="186" key="GridCell.Tab.0.left" timestamp="1600304157753">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598543905849" />
-    <state width="1419" height="186" key="GridCell.Tab.0.right" timestamp="1598543905849">
+    <state width="1419" height="186" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600304157753" />
+    <state width="1419" height="186" key="GridCell.Tab.0.right" timestamp="1600304157754">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598543905849" />
-    <state width="1419" height="186" key="GridCell.Tab.1.bottom" timestamp="1598543906402">
+    <state width="1419" height="186" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600304157754" />
+    <state width="1419" height="186" key="GridCell.Tab.1.bottom" timestamp="1600304157756">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598543906402" />
-    <state width="1419" height="186" key="GridCell.Tab.1.center" timestamp="1598543906400">
+    <state width="1419" height="186" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600304157756" />
+    <state width="1419" height="186" key="GridCell.Tab.1.center" timestamp="1600304157755">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1598543906400" />
-    <state width="1419" height="186" key="GridCell.Tab.1.left" timestamp="1598543906399">
+    <state width="1419" height="186" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1600304157755" />
+    <state width="1419" height="186" key="GridCell.Tab.1.left" timestamp="1600304157755">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1598543906399" />
-    <state width="1419" height="186" key="GridCell.Tab.1.right" timestamp="1598543906401">
+    <state width="1419" height="186" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1600304157755" />
+    <state width="1419" height="186" key="GridCell.Tab.1.right" timestamp="1600304157755">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1598543906401" />
+    <state width="1419" height="186" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1600304157755" />
     <state x="473" y="159" key="RollbackChangesDialog" timestamp="1597680256432">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
