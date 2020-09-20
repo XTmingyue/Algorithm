@@ -20,6 +20,11 @@
 3. 向下 -> 向右 -> 向右
 '''
 
+'''
+题解：定义数组p[i][j]：为从[0,0]到[i,j]的路径条数。由于只能向下走或向右走
+那么p[i][j] = p[i-1][j] + p[i][j-1]
+'''
+
 class UniquePaths:
     def uniquePaths(self, m, n):
         p = [[0]*n for _ in range(m)]
