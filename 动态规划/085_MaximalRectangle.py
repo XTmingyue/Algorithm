@@ -20,59 +20,41 @@
 
 '''
 题解：
-定义数组row[i][j]：表示在row[i]行中，以matrix[i][j]为最后一个元素的连续1的个数
-定义数组A[i][j]:表示以matrix[i][j]为右下角的最大的矩形面积。如何求呢？
-    我们只需要确定截止第j列，从行i以上最小的连续1的个数，就能计算出不同矩形的面积，取其中的最大值。
+参考求 084 最大矩形 的求解方案。
+以每一行为地基，计算在地基上的柱形构成的最大矩形
 '''
 class MaxRectangle:
-    def maxRectangle(self, matrix):
-        if len(matrix) <= 0:
-            return 0
-        rows, cols = len(matrix), len(matrix[0])
-        # 初始化两个数组
-        row = [[0] * cols for _ in range(rows)]
-        for i in range(rows):
-            # 累计1的个数
-            cum_num = 0
-            for j in range(cols):
-                if matrix[i][j] == "1":
-                    cum_num += 1
-                else:
-                    cum_num = 0
-                row[i][j] = cum_num
-
+    # 采用暴力剪枝的方法进行求解
+    def maxRectangleSub(self, nums):
         max_Area = 0
-        for i in range(rows):
-            for j in range(cols):
-                min_num = cols
-                for k in range(i, -1, -1):
-                    min_num = min(min_num, row[k][j])
-                    max_Area = max(max_Area, min_num * (i - k + 1))
+        for i in range(len(nums)):
+            # 只有遇到峰值才进行计算
+            if (i < len(nums) - 1 and nums[i] > nums[i + 1]) or i == len(nums) - 1:
+                min_len = nums[i]
+                # 往前遍历计算面积
+                for j in range(i, -1, -1):
+                    min_len = min(min_len, nums[j])
+                    max_Area = max(max_Area, min_len * (i - j + 1))
         return max_Area
 
-    # 合并两个循环
-    def maxRectangle_2(self, matrix):
-        if len(matrix) <= 0:
+    def maxRectangle(self, matrix):
+        if len(matrix) == 0:
             return 0
-        rows, cols = len(matrix), len(matrix[0])
-        # 初始化两个数组
-        row = [[0] * cols for _ in range(rows)]
-        max_Area = 0
-        for i in range(rows):
-            # 累计1的个数
+        # 计算每个地基上的柱形高度
+        row, col = len(matrix), len(matrix[0])
+        A = [[0] * col for _ in range(row)]
+        for j in range(col):
             cum_num = 0
-            for j in range(cols):
-                # 计算累计1的个数
+            for i in range(row):
                 if matrix[i][j] == "1":
                     cum_num += 1
                 else:
                     cum_num = 0
-                row[i][j] = cum_num
-                # 计算最大面积
-                min_num = cols
-                for k in range(i, -1, -1):
-                    min_num = min(min_num, row[k][j])
-                    max_Area = max(max_Area, min_num * (i - k + 1))
+                A[i][j] = cum_num
+        max_Area = 0
+        # 计算以每一行为地基时，地基之上的柱形围成的最大矩形
+        for i in range(row):
+            max_Area = max(max_Area, self.maxRectangleSub(A[i]))
         return max_Area
 
 if __name__ == '__main__':
