@@ -25,24 +25,22 @@ class LongestPalindrome():
     空间复杂度：O(n^2)
     '''
     def longestPalidrome(self, s):
-        if len(s) <= 1:
-            return s
-        # 初始化数组dp
-        dp = [[False]*len(s) for i in range(0, len(s))]
-        # 只有一个元素时，都为回文子串
-        for i in range(0, len(s)):
-            dp[i][i] = True
-        max_str = s[0]
-        for j in range(1, len(s)):
-            for i in range(0, j):
-                if j - i < 2:
-                    dp[i][j] = (s[i] == s[j])
-                else:
-                    dp[i][j] = (s[i] == s[j] and dp[i+1][j-1])
-                # 计算最大回文子串
-                if dp[i][j]:
-                    if len(max_str) < len(s[i:j+1]):
-                        max_str = s[i:j+1]
+        # 初始化数组d
+        n = len(s)
+        if n == 0:
+            return ""
+        d = [[False] * n for _ in range(n)]
+        max_len = 0
+        max_str = ""
+        # 每次固定右边界j，遍历所有的 [i,j], 0<=i<=j 是否是回文序列，目的是为了保证d[i+1][j-1]已经计算过了
+        for j in range(n):
+            for i in range(j, -1, -1):
+                d[i][j] = (s[i] == s[j])
+                if j - i >= 2:
+                    d[i][j] = d[i][j] and d[i + 1][j - 1]
+                if d[i][j] and (j - i + 1) > max_len:
+                    max_len = max(max_len, j - i + 1)
+                    max_str = s[i:j + 1]
         return max_str
 
     # 中心扩散

@@ -14,25 +14,22 @@
 一个可能的最长回文子序列为 "bbbb"。
 '''
 
-'''
-题解：
-定义数组d[i][j]表示s[i: j+1]是否是回文子序列。
-如果s[i: j+1]是回文子序列，那d[i+1][j-1] = True并且s[i] == s[j].
-因此d[i][j] = (s[i] == s[j] and d[i+1][j-1])。
-注意：0<=i+1<=j-1，即j-i >= 2。那么当0<j-i<2时，只需判断s[i]==s[j]即可。
-'''
 
 class Sloution:
+    '''
+    题解：
+
+    '''
     def longestPalindromeSubseq(self, s):
-        # 初始化数组d
-        n = len(s)
-        if n == 0:
-            return 0
-        d = [[False] * n for _ in range(n)]
-        # 只有一个元素时都是回文子串
-        for i in range(n):
-            d[i][i] = True
-        max_len = 1
+
+
+
+
+
+if __name__ == '__main__':
+    class_S = Sloution()
+    s = "bbbab"
+    print(class_S.longestPalindromeSubseq(s))
 
 
 
