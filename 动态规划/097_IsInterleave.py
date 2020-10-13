@@ -42,6 +42,7 @@ class IsInterleave:
             return self.isInterleave(s1[:-1], s2, s3[:-1]) or self.isInterleave(s1, s2[:-1], s3[:-1])
         else:
             return False
+
     # 动态规划
     # 定义数组dp[i][j]表示s1前i个元素与s2前j个元素是否可以交错组成s3前i+j个元素
     # 可知，s3的第i+j个元素要么等于s1第i个元素，要么等于s2第j个元素。

@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68c8a2de-5643-4cdf-843e-e9f2d6ed0890" name="Default" comment="2020-08-05 NextPermutation Get">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/动态规划/097_IsInterleave.py" beforeDir="false" afterPath="$PROJECT_DIR$/动态规划/097_IsInterleave.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,49 +56,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.097_IsInterleave">
-    <configuration name="091_NumDecodings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/动态规划" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/091_NumDecodings.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="096_NumTrees" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/动态规划" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/096_NumTrees.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.123_MaxProfit">
     <configuration name="097_IsInterleave" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,7 +78,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="312_MaxCoins" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="115_NumDistinct" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,7 +90,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/312_MaxCoins.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/115_NumDistinct.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="516_LongestPalindromeSubseq" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="120_MinimumTotal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,7 +111,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/516_LongestPalindromeSubseq.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/120_MinimumTotal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="121_MaxProfit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/动态规划" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/121_MaxProfit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="123_MaxProfit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/动态规划" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动态规划/123_MaxProfit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,19 +163,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.516_LongestPalindromeSubseq" />
-      <item itemvalue="Python.312_MaxCoins" />
-      <item itemvalue="Python.091_NumDecodings" />
-      <item itemvalue="Python.096_NumTrees" />
       <item itemvalue="Python.097_IsInterleave" />
+      <item itemvalue="Python.115_NumDistinct" />
+      <item itemvalue="Python.120_MinimumTotal" />
+      <item itemvalue="Python.121_MaxProfit" />
+      <item itemvalue="Python.123_MaxProfit" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.123_MaxProfit" />
+        <item itemvalue="Python.121_MaxProfit" />
+        <item itemvalue="Python.120_MinimumTotal" />
+        <item itemvalue="Python.115_NumDistinct" />
         <item itemvalue="Python.097_IsInterleave" />
-        <item itemvalue="Python.096_NumTrees" />
-        <item itemvalue="Python.091_NumDecodings" />
-        <item itemvalue="Python.312_MaxCoins" />
-        <item itemvalue="Python.516_LongestPalindromeSubseq" />
       </list>
     </recent_temporary>
   </component>
@@ -210,38 +211,38 @@
   <component name="WindowStateProjectService">
     <state x="507" y="211" key="FileChooserDialogImpl" timestamp="1600955125749" />
     <state x="507" y="211" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1600955125749" />
-    <state width="1419" height="125" key="GridCell.Tab.0.bottom" timestamp="1602319924835">
+    <state width="1419" height="209" key="GridCell.Tab.0.bottom" timestamp="1602551826124">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="125" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602319924835" />
-    <state width="1419" height="125" key="GridCell.Tab.0.center" timestamp="1602319924834">
+    <state width="1419" height="209" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602551826124" />
+    <state width="1419" height="209" key="GridCell.Tab.0.center" timestamp="1602551826122">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="125" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602319924834" />
-    <state width="1419" height="125" key="GridCell.Tab.0.left" timestamp="1602319924833">
+    <state width="1419" height="209" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602551826122" />
+    <state width="1419" height="209" key="GridCell.Tab.0.left" timestamp="1602551826121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="125" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602319924833" />
-    <state width="1419" height="125" key="GridCell.Tab.0.right" timestamp="1602319924834">
+    <state width="1419" height="209" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602551826121" />
+    <state width="1419" height="209" key="GridCell.Tab.0.right" timestamp="1602551826123">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="125" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602319924834" />
-    <state width="1419" height="186" key="GridCell.Tab.1.bottom" timestamp="1602302563748">
+    <state width="1419" height="209" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602551826123" />
+    <state width="1419" height="186" key="GridCell.Tab.1.bottom" timestamp="1602383096818">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602302563748" />
-    <state width="1419" height="186" key="GridCell.Tab.1.center" timestamp="1602302563747">
+    <state width="1419" height="186" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602383096818" />
+    <state width="1419" height="186" key="GridCell.Tab.1.center" timestamp="1602383096817">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1602302563747" />
-    <state width="1419" height="186" key="GridCell.Tab.1.left" timestamp="1602302563747">
+    <state width="1419" height="186" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1602383096817" />
+    <state width="1419" height="186" key="GridCell.Tab.1.left" timestamp="1602383096817">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1602302563747" />
-    <state width="1419" height="186" key="GridCell.Tab.1.right" timestamp="1602302563748">
+    <state width="1419" height="186" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1602383096817" />
+    <state width="1419" height="186" key="GridCell.Tab.1.right" timestamp="1602383096818">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="186" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1602302563748" />
+    <state width="1419" height="186" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1602383096818" />
     <state x="473" y="159" key="RollbackChangesDialog" timestamp="1600955125749" />
     <state x="473" y="159" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600955125749" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1601252256709">
@@ -271,6 +272,13 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
