@@ -17,4 +17,19 @@
 '''
 
 class MinCut:
+    '''
+    题解：动态规划
+    定义数组dp[i]：表示[0:i]子串最少的分割次数
+    求转移方程：
+    我们遍历[0:i]之间的数字k进行分割，当[k:i]是回文串时dp[i] = min(dp[k] + 1)
+    同时由于一直需要判断[k:i]是否是回文串，因此考虑申请一个二维数组nums[i][j]用于存储[i:j]是否是回文串
+    '''
+    def palindromeSub(self, nums, s):
+
     def minCut(self, s):
+        n = len(s)
+        dp = [0] * n
+        nums = [[0] * n for _ in range(n)]
+
+
+
