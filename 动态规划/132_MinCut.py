@@ -15,8 +15,31 @@
 输出: 1
 解释: 进行一次分割就可将 s 分割成 ["aa","b"] 这样两个回文子串。
 '''
+
+
 import math
 class MinCut:
+    '''
+    题解：递归 -- 超时
+    定义函数minCut返回字符串s的最少分割次数
+    1. 如果s就是回文串，返回0
+    2. 如果s不是回文串，遍历s中每个字符作为分割点，那么以i为分割点的最少分割次数 = min(minCut(s[0:i]) + minCut(s[i+1:-1]) + 1)
+    '''
+    def isPalindromeStr(self, s):
+        n = len(s) // 2
+        for i in range(0, n):
+            if s[i] != s[len(s) - 1 - i]:
+                return False
+        return True
+
+    def minCut(self, s):
+        if self.isPalindromeStr(s):
+            return 0
+        min_cut = len(s)
+        for i in range(1, len(s)):
+            min_cut = min(min_cut, self.minCut(s[0:i]) + self.minCut(s[i:]) + 1)
+        return min_cut
+
     '''
     题解：动态规划
     定义数组dp[i]：表示[0:i]子串最少的分割次数
@@ -40,7 +63,7 @@ class MinCut:
                 if i + 1 <= j - 1 and s[i] == s[j]:
                     nums[i][j] = nums[i][j] and nums[i+1][j-1]
 
-    def minCut(self, s):
+    def minCut_2(self, s):
         n = len(s)
         dp = [math.inf] * n
         dp[0] = 0
