@@ -45,24 +45,51 @@ class WordBreak:
         a. 从右到左遍历dp数组中的元素k，当s[k+1:] in wordDict中时，递归确定s[0:k+1]的所有组合；
         b. 注意可能存在多个k满足 s[k+1:] in wordDict中，对于每一种都要递归的确定s[0:k+1]的所有组合；
     '''
+    # 返回s可以组成的所有组合， dp是所有为True的下标集合
+    def wordBreakSub(self, s, wordDict, dp):
+        # 当只剩一个元素时
+        if s in wordDict:
+            res = [s]
+        else:
+            res = []
+        i = -1
+        # 从右到左遍历dp数组
+        while len(dp) + i >= 0:
+            # 当s[k+1:] in wordDict中时，递归确定s[0:k+1]的所有组合
+            if s[dp[i] + 1:] in wordDict:
+                left_list = self.wordBreakSub(s[0: dp[i]+1], wordDict, dp[0:-1])
+                for wordStr in left_list:
+                    res.append(wordStr + ' ' + s[dp[i] + 1:])
+            i -= 1
+        return res
+    # 计算dp数组
+    def get_DP(self, s, wordDict):
+        n = len(s)
+        dp = [False] * n
+        # 确定每个dp[i]的值
+        for dp_i in range(0, n):
+            if s[0:dp_i + 1] in wordDict:
+                dp[dp_i] = True
+            else:
+                # s[j:dp_i + 1]至少要包含一个元素，因此j>0 and j<=dp_i
+                for j in range(1, dp_i + 1):
+                    if s[j: dp_i + 1] in wordDict:
+                        dp[dp_i] = dp[dp_i] or dp[j - 1]
+        return dp
     def wordBreak(self, s, wordDict):
         # 首先计算dp数组
         n = len(s)
         if n == 0:
             return []
-        dp = [False] * n
-        for i in range(0, n):
-            if s[0:i+1] in wordDict:
-                dp[i] = True
-            else:
-                for j in range(1, i):
-                    if s[j:i+1] in wordDict:
-                        dp[i] = dp[i] or dp[j-1]
-
-        return dp[-1]
+        dp = self.get_DP(s, wordDict)
+        dp_list = []
+        for i in range(n):
+            if dp[i]:
+                dp_list.append(i)
+        return self.wordBreakSub(s, wordDict, dp_list[0:-1])
 
 if __name__ == '__main__':
     WB = WordBreak()
-    s = "applepenapple"
-    wordDict = ["apple", "pen"]
+    s = "pineapplepenapple"
+    wordDict = ["apple", "pen", "applepen", "pine", "pineapple"]
     print(WB.wordBreak(s, wordDict))
