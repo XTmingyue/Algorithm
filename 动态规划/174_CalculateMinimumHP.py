@@ -25,6 +25,17 @@
 10	30	-5 (P)
 '''
 
+'''
+题解：递归
+从出发点开始，DFS 搜索到终点的所有的路径。
+在每个点，我们可以选择向右搜或者向下搜（最后一行/列除外）。
+
+因此，求从 (0, 0) 出发到终点的最小初始值 dfs(0, 0)，可以转化为先求 dfs(1, 0) 和 dfs(0, 1)，
+取其中较小的一个，即min(dfs(0, 1), dfs(1, 0))，作为 (0, 0)点的后续路径所要求的最低血量。
+又因为 (0, 0) 点本身就提供血量 dungoen[0][0]，因此从 (0, 0) 点出发所需的血量为后续路径所需要的最低血量减去 (0, 0)点提供的血量，
+即 min(dfs(0, 1), dfs(1, 0)) - dungoen[0][0]（这里写代码时要注意骑士的血量永远不能小于 1，即初始值就要大于等于1）
+'''
+
 class Solution:
     '''
     题解：动态规划
@@ -35,28 +46,34 @@ class Solution:
     那么，假设已知dp[i+1][j]和dp[i][j+1]，骑士到达[i+1][j]或[i][j+1]的初始值为dp[i][j] + dungeon[i][j]
     只要dp[i][j] + dungeon[i][j] = min(dp[i+1][j], dp[i][j+1])，骑士就可以达到终点。
     因此 dp[i][j] = min(dp[i+1][j], dp[i][j+1]) - dungeon[i][j]
-    需要注意的是初始值必须大于等于1，因为骑士在终点时的健康值至少要是1，否则为0就死亡了。
+    需要注意的是初始值必须大于等于1，因为骑士的健康值至少要是1，否则为0就死亡了。
     '''
     def calculateMinimumHP(self, dungeon):
         if len(dungeon) == 0:
             return 0
         n, m = len(dungeon), len(dungeon[0])
-        dp = [[0] * m for _ in range(n)]
+        # 初始值为1
+        dp = [[1] * m for _ in range(n)]
         if dungeon[n-1][m-1] == 0:
             dp[n-1][m-1] = 1
         elif dungeon[n-1][m-1] < 0:
             dp[n - 1][m - 1] = 1 + (-1 * dungeon[n-1][m-1])
         # 初始化第n行
         for j in range(m-2, -1, -1):
-            dp[n-1][j] = dp[n-1][j+1] - dungeon[n-1][j]
+            dp[n-1][j] = max(dp[n-1][j+1] - dungeon[n-1][j], 1)
+        # 初始化第m列
         for i in range(n-2, -1, -1):
-            dp[i][m-1] = dp[i+1][m-1] - dungeon[i][m-1]
-        print(dp)
+            dp[i][m-1] = max(dp[i+1][m-1] - dungeon[i][m-1], 1)
+        # 状态转移
+        for i in range(n-2, -1, -1):
+            for j in range(m-2, -1, -1):
+                dp[i][j] = max(min(dp[i+1][j], dp[i][j+1]) - dungeon[i][j], 1)
+        return dp[0][0]
 
 
 
 if __name__ == '__main__':
     solution = Solution()
     #dungeon = [[1, -4, 5,-99],[2,-2,-2,-1]]
-    dungeon = [[1,-3,3],[0,-2,0],[-3,-3,-3]]
+    dungeon = [[100]]
     print(solution.calculateMinimumHP(dungeon))
