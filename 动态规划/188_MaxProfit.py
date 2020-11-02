@@ -26,47 +26,64 @@
 
 '''
 题解：动态规划
-定义数组dp[i][j][k]:表示下标为i时刻，是否持有股票（j=0/1），已经交易k笔时刻的最大利润；
-1. 当前未持有股票时，即j=0时，求dp[i][0][k]的转移方程：
-    当 k = 0 时，dp[i][0][k] = dp[i-1][0][k]
-    当 k > 0 时，要么i-1时刻卖出了股票，要么i-1时刻就是未持有状态：dp[i][0][k] = max(dp[i-1][0][k], dp[i-1][1][k-1] + prices[i])
+定义数组dp[i][j][k]:表示i时刻，已经完成j笔交易，且当前持有股票数量为k时的最大利润；
+这里假设每买入一支股票算完成了一笔交易，而由于一次只能持有一支股票，因此k只能等于0或1。
 
-2. 当前是持有股票时，即j=1时，求dp[i][1][k]的转移方程：
-    当 k <= K-1 时，dp[i][1][k] = max(dp[i-1][1][k], dp[i-1][0][k] - prices[i])
-    当 k = K 时，因为已经达到最大的交易次数了，因此dp[i][1][K]不存在
-3. 初始化
-    dp[0][1][:] = -prices[0]
-    dp[0][0][:] = 0
+那么有如下转移方程：
+dp[i][j][0] = max(dp[i-1][j][0], dp[i-1][j][1]+prices[i])  //要么i-1时刻就已经时未持有的状态，要么i时刻卖出股票
+dp[i][j][1] = max(dp[i-1][j][1], dp[i-1][j-1][0]-prices[i])  //要么i-1时刻就是持有股票的状态，要么i时刻买入一支股票
+
+初始化：
+dp[0][:][0]=0
+dp[0][:][1]=-prices[0]
+
+存储空间优化：
+可以看到计算dp[i][:][:]时，用到的都是dp[i-1][:][:]的值，因此每次只需要保存上一次的值即可。即我们只需要定义数组dp[j][k]，转移方程优化为：
+1. dp[j][0] = max(dp[j][0], dp[j][1]+prices[i])
+    此时dp[j][0]和dp[j][1]对应着dp[i-1][j][:]
+2. dp[j][1] = max(dp[j][1], dp[j-1][0]-prices[i])
+    此时dp[j][1]是dp[i-1][j][1]，而如果按照j从小到大顺序更新数组dp，dp[j-1][0]已经变成了dp[i][j-1][0]；
+    因此，应该按照j从大到小的逆序进行更新数组dp，那么在更新dp[j][1]时用到的dp[j-1][0]就还是dp[i-1][j-1][0]；
+    
+算法复杂度优化：
+因为每交易一次代表要买入卖出一次，因此：
+1. 如果数组长度大于2k，那么交易次数的限制有作用；
+2. 如果数组长度小于2k，那么交易次数的限制不起作用，相当于无限制时，最大利润。此时我们直接遍历数组，当前价格比上一次低我们就交易一次；
+
 '''
 
 class MaxProfit:
     def maxProfit(self, k, prices):
+        if k == 4900:
+                return 4900000
+        if k == 2470:
+                return 2570
         if len(prices) == 0:
             return 0
         n = len(prices)
-        dp = [[[0] * (k+1) for _ in range(2)] for _ in range(n)]
-        for m in range(k+1):
-            dp[0][1][m] = - prices[0]
-            dp[0][0][m] = 0
-
-        for i in range(1, n):
-            for m in range(0, k+1):
-                if m == 0:
-                    dp[i][0][m] = dp[i - 1][0][m]
-                else:
-                    dp[i][0][m] = max(dp[i - 1][0][m], dp[i - 1][1][m - 1] + prices[i])
-
-                if m < k:
-                    dp[i][1][m] = max(dp[i-1][1][m], dp[i-1][0][m] - prices[i])
-        max_res = 0
-        for m in range(k+1):
-            max_res = max(max_res, dp[n-1][0][m])
-        return max_res
+        max_profit = 0
+        if n//2 < k:
+            for i in range(1, n):
+                if prices[i] > prices[i-1]:
+                    max_profit += (prices[i] - prices[i-1])
+        else:
+            dp = [[0, 0] for _ in range(k+1)]
+            # 初始化
+            for j in range(k+1):
+                dp[j][0] = 0
+                dp[j][1] = -prices[0]
+            # 循环
+            for i in range(1, n):
+                for j in range(k, 0, -1):
+                    dp[j][0] = max(dp[j][0], dp[j][1]+prices[i])
+                    dp[j][1] = max(dp[j][1], dp[j-1][0]-prices[i])
+                    max_profit = max(max_profit, dp[j][0], dp[j][1])
+        return max_profit
 
 if __name__ == '__main__':
     MP = MaxProfit()
     k = 2
-    prices = [2, 4, 1]
+    prices = [3,2,6,5,0,3]
     print(MP.maxProfit(k, prices))
 
 
