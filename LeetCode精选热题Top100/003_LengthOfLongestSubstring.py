@@ -48,8 +48,32 @@ class Solution:
                 dp[i] = cum
             max_len = max(max_len, dp[i])
         return max_len
+    '''
+    题解：滑动窗口解法
+    假设以i开始的最长子串为[i:j]，那么我们要计算以i+1开始的最长子串。
+    首先可以知道[i+1:j]也一定不含重复字符的子串，我们将j往后移，并判断j元素是否在[i+1:j]内即可。
+    '''
+    def lengthOfLongestSubstring_2(self, s: str):
+        if s == '':
+            return 0
+        curr_set = set(s[0])
+        max_len = 1
+        j = 1
+        for i in range(0, len(s)):
+            curr_len = j - i
+            while j < len(s):
+                if s[j] not in curr_set:
+                    curr_len += 1
+                    curr_set.add(s[j])
+                    j += 1
+                    max_len = max(max_len, curr_len)
+                else:
+                    max_len = max(max_len, curr_len)
+                    break
+            curr_set.remove(s[i])
+        return max_len
 
 if __name__ == '__main__':
     S = Solution()
     s = "dvdf"
-    print(S.lengthOfLongestSubstring(s))
+    print(S.lengthOfLongestSubstring_2(s))

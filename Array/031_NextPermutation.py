@@ -50,6 +50,6 @@ class NextPermutation():
 
 
 if __name__ == '__main__':
-    nums = [1, 2, 4, 5, 3]
+    nums = [1, 2, 3, 5, 4, 3, 2, 1]
     NP = NextPermutation()
     print(NP.next_permutation(nums))
